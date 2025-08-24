@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<main>
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="form-container animated-card">
+                <h2 class="text-center mb-4"><i class="fas fa-user-plus"></i> Create Account</h2>
+                <form action="/auth/register" method="POST">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+                </form>
+                <div class="text-center mt-3">
+                    <p>Already have an account? <a href="/login">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.content-wrapper {
+  flex: 1;
+  opacity: 0; /* Initially hidden for animation */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #13be00; /* Bootstrap primary color */
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #13be00;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0e8800;
+}
+
+/* Forms */
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #86b7fe;
+}
+
+/* Footer */
+footer {
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Animation Classes */
+.animated-card {
+  opacity: 0; /* Initially hidden for animation */
+}
+
+.dashboard-stat {
+  opacity: 0; /* Initially hidden for animation */
+}
